@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638321044608733393
-    m_Hash: 1860606031
+      ticks: 638321063223101332
+    m_Hash: 1042693431
   m_LockFileStatus:
     m_FilePath: D:/UnityProject/Fortune/Fortune/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638321044727803070
-    m_Hash: 1307731283
+      ticks: 638321063282368593
+    m_Hash: 1400099020
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -136,6 +136,7 @@ m_PackageAssets:
         - 7.0.9
         - 7.0.10
         - 7.0.11
+        - 7.0.12
         - 8.0.0-pre.3
         - 8.0.0-pre.4
         - 8.0.0
@@ -150,6 +151,7 @@ m_PackageAssets:
         - 9.0.1
         - 9.0.2
         - 9.0.3
+        - 9.0.4
         - 10.0.0-pre.1
         - 10.0.0-pre.2
         - 10.0.0
@@ -1449,6 +1451,7 @@ m_PackageAssets:
         - 3.2.0-pre.3
         - 3.2.0-pre.4
         - 3.2.0-pre.5
+        - 3.2.0-pre.6
         - 4.0.0-pre.1
         - 4.0.0-pre.2
         compatible:
@@ -1458,6 +1461,7 @@ m_PackageAssets:
         - 3.2.0-pre.3
         - 3.2.0-pre.4
         - 3.2.0-pre.5
+        - 3.2.0-pre.6
         verified: 3.0.6
       dependencies:
       - name: com.unity.ugui
@@ -3378,6 +3382,92 @@ m_PackageAssets:
         type: 
         url: 
         revision: 
+        path: 
+    - packageId: com.unity.nuget.newtonsoft-json@3.0.2
+      testable: 0
+      isDirectDependency: 1
+      version: 3.0.2
+      source: 1
+      resolvedPath: D:\UnityProject\Fortune\Fortune\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2
+      assetPath: Packages/com.unity.nuget.newtonsoft-json
+      name: com.unity.nuget.newtonsoft-json
+      displayName: Newtonsoft Json
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: library
+      description: 'Newtonsoft Json for use in Unity projects and Unity packages.
+        Currently synced to version 13.0.1.
+
+
+        This package is used for advanced
+        json serialization and deserialization. Most Unity users will be better suited
+        using the existing json tools built into Unity.
+
+        To avoid assembly
+        clashes, please use this package if you intend to use Newtonsoft Json.'
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 1.0.0-preview.2
+        - 1.0.0-preview.3
+        - 1.0.0-preview.4
+        - 1.0.1-preview.1
+        - 1.1.2
+        - 2.0.0-preview
+        - 2.0.0-preview.1
+        - 2.0.0-preview.2
+        - 2.0.0
+        - 2.0.1-preview.1
+        - 2.0.2
+        - 3.0.1
+        - 3.0.2
+        - 3.1.0
+        - 3.2.0
+        - 3.2.1
+        compatible:
+        - 1.0.0-preview.2
+        - 1.0.0-preview.3
+        - 1.0.0-preview.4
+        - 1.0.1-preview.1
+        - 1.1.2
+        - 2.0.0-preview
+        - 2.0.0-preview.1
+        - 2.0.0-preview.2
+        - 2.0.0
+        - 2.0.1-preview.1
+        - 2.0.2
+        - 3.0.1
+        - 3.0.2
+        - 3.1.0
+        - 3.2.0
+        - 3.2.1
+        verified: 2.0.2
+      dependencies: []
+      resolvedDependencies: []
+      keywords: []
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637846828220000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/com.unity.nuget.newtonsoft-json.git
+        revision: 8f66870a71ad3f2cdd46330b5c482dfd138ffc64
         path: 
     - packageId: com.unity.modules.subsystems@1.0.0
       testable: 0

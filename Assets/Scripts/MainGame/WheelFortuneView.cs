@@ -12,7 +12,10 @@ namespace MainGame
             m_controller = new WheelFortuneController(m_viewModel);
             m_controller.Initialize();
         }
-
+        public void Result()
+        {
+            m_controller.Result();
+        }
         private void OnDestroy()
         {
             m_controller.Dispose();

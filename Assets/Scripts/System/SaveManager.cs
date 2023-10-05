@@ -1,5 +1,4 @@
 using UnityEngine;
-using Newtonsoft.Json;
 
 namespace System
 {

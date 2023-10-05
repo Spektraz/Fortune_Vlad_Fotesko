@@ -1,7 +1,5 @@
 using System;
-using System.Collections.Generic;
-using Name;
-using UnityEngine;
+using Save;
 using Random = UnityEngine.Random;
 
 namespace MainGame
@@ -23,7 +21,7 @@ namespace MainGame
         {
             m_viewModel.StartWheel.onClick.AddListener(PlayFortune);
         }
-        
+
         private void DisposeButtons()
         {
             m_viewModel.StartWheel.onClick.RemoveAllListeners();
@@ -37,25 +35,32 @@ namespace MainGame
         {
             RandomizerNumbers();
             m_viewModel.AnimatorWheel.SetTrigger(GlobalConst.WheelTrigger);
-            Save(m_viewModel.Numbers[10].text);
+            m_viewModel.EventSystem.enabled = false;
         }
-       
+
+        public void Result()
+        {
+            Save(m_viewModel.Numbers[GlobalConst.WinCoins].text);
+            m_viewModel.EventSystem.enabled = true;
+        }
         private void Check()
         {
             m_controller ??= new CoinsController();
-            if(m_controller.MainCoins != 0)
+            if(m_controller.MainCoins != null)
                 m_viewModel.Coins.text = m_controller.MainCoins.ToString();
-            m_viewModel.Coins.text = "0";
+            else
+                m_viewModel.Coins.text = "0";
         }
         private void Save(string coins)
         {
             m_controller.SaveCoins(coins);
+            m_viewModel.Coins.text = m_controller.MainCoins.ToString();
         }
         private void RandomizerNumbers()
         {
             foreach (var var in m_viewModel.Numbers)
             {
-                var number =  Random.Range(1, 100);
+                var number =  Random.Range(GlobalConst.StartNumber, GlobalConst.FinishNumber);
                 var.text = number.ToString();
                 var.text = var.text + "000";
             }

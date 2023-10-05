@@ -8,6 +8,7 @@ namespace MainGame
 {
     public class WheelFortuneModel : MonoBehaviour
     {
+        [Header("Main Coins")]
         [SerializeField] private TextMeshProUGUI m_coins;
         
         [Header("Numbers")]
