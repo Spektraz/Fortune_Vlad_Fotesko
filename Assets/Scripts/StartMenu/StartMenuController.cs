@@ -16,18 +16,18 @@ namespace StartMenu
         }
         private void InitializeButtons()
         {
-            m_viewModel.StartButton.onClick.AddListener(StartGame);
+            m_viewModel.StartButton.onClick.AddListener(StartScene);
         }
         
         private void DisposeButtons()
         {
-            m_viewModel.StartButton.onClick.RemoveListener(StartGame);
+            m_viewModel.StartButton.onClick.RemoveAllListeners();
         }
         public void Dispose()
         {
             DisposeButtons();
         }
-        private void StartGame()
+        private void StartScene()
         {
             m_viewModel.AudioSource.enabled = true;
             SceneManager.LoadScene(GlobalConst.SceneMainGame);
